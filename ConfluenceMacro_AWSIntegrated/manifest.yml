@@ -1,0 +1,15 @@
+modules:
+  macro:
+    - key: confluencemacro-awsintegrated
+      function: main
+      title: Confluence Macro using AWS
+      description: Inserts Hello world!
+      config:
+        function: config-function
+  function:
+    - key: main
+      handler: index.run
+    - key: config-function
+      handler: index.config
+app:
+  id: ari:cloud:ecosystem::app/305a19db-81ce-4b50-b0ec-baf5ffaa3dc3
